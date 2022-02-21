@@ -12,6 +12,58 @@ Version      : 1.0
   font-family: 'Lato', sans-serif;
   font-family: 'Oswald', sans-serif;
 }*/
+/*--------------- google fonts --------------*/
+
+/* vietnamese */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/anton/v22/1Ptgg87LROyAm3K8-C8QSw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/anton/v22/1Ptgg87LROyAm3K9-C8QSw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/anton/v22/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------font end----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .wrapper {
   position: fixed;
   top: 0;
@@ -777,7 +829,7 @@ label {
   margin-left: 0;
 }
 
-.pt-table.desktop-768 .pt-tablecell {
+.pt-table.gcr-123 .pt-tablecell {
   padding-bottom: 110px;
   padding-top: 60px;
 }
@@ -841,6 +893,50 @@ label {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------Back to Home Button---------*/
+
+
+.back-to-home{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  border: none;
+  background:#1e2530;
+  margin: 20px 0px 0px 20px;
+}
+
+.back-to-home i{
+  font-size: 20px;
+  color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------------
                     Welcome             
 ------------------------------------------------------*/
@@ -895,23 +991,66 @@ label {
   font-weight: bold;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------About us--------------------------*/
 
 .about {
-  background-image: url(./../../images/about_bg.jpg);
+  /*background-image: url(./../../images/about_bg.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
 }
 .about-top {
-  background-color: #1e2530;
-  opacity: 0.9;
+  background-color: #1A1A1A;
+  
 }
-.about-top h1 {
+/*.about-top h1 {
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 20px;
-}
-.about-top p {
+}*/
+/*.about-top p {
   color: #ffffff;
   padding: 50px;
-}
+}*/
+ .about-title h1{
+  color: #314A4D;
+  font-family: Anton;
+  font-size: 90px;
+ }
+ .right-flex{
+  display: flex;
+  margin-top:-20px;
+ }
+ .gcr-about-title-p{
+  width:82%;
+ }
+ .gcr-about-title-p p{
+  color: #ffffff;
+  padding:13px 25px 0px 20px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 20px;
+ }
+ 
+
+

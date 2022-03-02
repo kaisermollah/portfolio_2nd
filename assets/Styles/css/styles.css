@@ -244,13 +244,13 @@ h6 {
   line-height: 1.3;
 }
 
-p {
+/*p {
   margin-bottom: 20px;
 }
 p:last-child {
   margin-bottom: 0;
 }
-
+*/
 /*
  * Selection color
  */
@@ -969,34 +969,49 @@ label {
 
 /*-------------------welcome----------------*/
 
-.row {
+/*.row {
   margin-right: calc(var(--bs-gutter-x) * -0);
   margin-left: calc(var(--bs-gutter-x) * -0);
 }
-
+*/
 .welcome {
-  background: #1e2530;
+  background-image: url(./../../images/about_bg.jpg);
   width: 100%;
 }
 
 .wlc-heading {
-  background: #1e2530;
+
+  padding: 20px 0px;
+  text-transform: uppercase;
 }
 
 .wlc-heading h1 {
-  text-align: center;
-  padding: 30px 0px;
+  letter-spacing: 3px;
   color: #ffffff;
   font-size: 40px;
   font-weight: bold;
 }
+.wlc-heading h3{
+    color: #ffc867;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+/*----------welcome right contant------------*/
 
+.wlc-con-right{
+  padding: 20px;
+  margin: 20px;
+  background: #4c4c4c;
+  border-radius: 15px;
+}
+.wlc-con-right h2{
+  color: #ffffff;
+}
 
-
-
-
-
-
+.wlc-con-right p{
+  color: #ffffff;
+}
 
 
 
@@ -1021,6 +1036,7 @@ label {
 }
 .about-top {
   background-color: #1A1A1A;
+  min-height: 550px;
   
 }
 .about-pic{
@@ -1028,7 +1044,7 @@ label {
   height:100%;
 }
 .about-pic img{
-  width:352px;
+  width:385px;
 }
 /*.about-top h1 {
   color: #ffffff;
@@ -1046,7 +1062,6 @@ label {
  }
  .right-flex{
   display: flex;
-  margin-top:-20px;
  }
  .gcr-about-title-p{
   width:82%;
@@ -1062,6 +1077,8 @@ label {
   text-decoration: none;
   color:#2F4A4E;
 }
+
+#more {display: none;}
 /*----------about top end------------*/
 
 .about-content{
@@ -1074,11 +1091,20 @@ label {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 50px 0px;
-    margin-top: -80px;
+    margin-top: -130px;
     box-shadow: 0px 4px 31px #888888;
 }
 .about-main-content h4{
   text-align: center;
   color:#2F4A4E;
   font-family: Anton;
+}
+.about-main-content p{
+  font-size: 15px;
+}
+.about-main-content i{
+    font-size: 30px;
+    padding: 20px;
+    border: 2px dotted;
+    color: #2d4b4e;
 }

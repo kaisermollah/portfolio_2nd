@@ -587,6 +587,10 @@ label {
 /*------------------------------------------------
     Home Page
 -------------------------------------------------*/
+.gcrhythm-menu.clear{
+  width: 42%;
+  margin: 0 auto;
+}
 
 .gcrhythm-item:first-child {
   margin-left: 0;
@@ -791,13 +795,19 @@ label {
 }
 
 .page-home .gcrhythm-item:nth-last-child(1),
-.page-home .gcrhythm-item:nth-last-child(2),
-.page-home .gcrhythm-item:nth-last-child(3) {
+.page-home .gcrhythm-item:nth-last-child(2) {
   -webkit-transform: rotate(30deg) translate(87px, -80px);
   -moz-transform: rotate(30deg) translate(87px, -80px);
   -ms-transform: rotate(30deg) translate(87px, -80px);
   -o-transform: rotate(30deg) translate(87px, -80px);
   transform: rotate(30deg) translate(87px, -80px);
+}
+.page-home .gcrhythm-item:nth-last-child(3) {
+  -webkit-transform: rotate(30deg) translate(-1px, -1px);
+  -moz-transform: rotate(30deg) translate(-1px, -1px);
+  -ms-transform: rotate(30deg) translate(-1px, -1px);
+  -o-transform: rotate(30deg) translate(-1px, -1px);
+  transform: rotate(30deg) translate(-1px, -1px);
 }
 /*------------------------------------------------
     Welcome Page
@@ -891,8 +901,15 @@ label {
     -o-transform: rotate(30deg) translate(0px, 0px);
     transform: rotate(30deg) translate(0px, 0px);
   }
-}
 
+}
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  .gcrhythm-menu.clear{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
 
 
@@ -906,7 +923,10 @@ label {
 
 
 /*-------------Back to Home Button---------*/
-
+.backHomeButton{
+  height: 100px;
+  width: 100%;
+}
 
 .back-to-home{
   height:50px;
@@ -915,6 +935,9 @@ label {
   border: none;
   background:#1e2530;
   margin: 20px 0px 0px 20px;
+  position: fixed;
+  z-index: 8;
+
 }
 
 .back-to-home i{
@@ -924,7 +947,7 @@ label {
 
 
 
-
+/*-----------Back TO Home Button End--------------*/
 
 
 
@@ -941,33 +964,7 @@ label {
                     Welcome             
 ------------------------------------------------------*/
 
-/*----------------------------------------------------
-                    Footer             
-------------------------------------------------------*/
-#button-addon1 {
-  color: #ffc371;
-}
 
-.footer i {
-  color: #ffc371;
-  /*color:#ffffff;*/
-}
-
-.footer h6 {
-  color: #ffc371;
-}
-
-.form-control::placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic;
-}
-
-.form-control.shadow-0:focus {
-  box-shadow: none;
-}
-
-/*-------------------welcome----------------*/
 
 /*.row {
   margin-right: calc(var(--bs-gutter-x) * -0);
@@ -975,13 +972,16 @@ label {
 }
 */
 .welcome {
-  background-image: url(./../../images/about_bg.jpg);
+  background-image: url(./../../images/welcome_bg.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
 }
 
 .wlc-heading {
 
-  padding: 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -999,11 +999,12 @@ label {
 }
 /*----------welcome right contant------------*/
 
-.wlc-con-right{
-  padding: 20px;
-  margin: 20px;
-  background: #4c4c4c;
-  border-radius: 15px;
+.wlc-con-right {
+    padding: 30px;
+    margin: 20px 10px 100px 10px;
+    background-color: rgba(15, 17, 24, 0.8);
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px #ffffff;
 }
 .wlc-con-right h2{
   color: #ffffff;
@@ -1014,9 +1015,21 @@ label {
 }
 
 
+.ceo-social a i{
 
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid;
+    border-radius: 5px;
 
+}
 
+.wlc-con-right h4{
+  padding: 15px 0px;
+  color: #ffffff;
+  font-weight: bold;
+}
 
 
 
@@ -1033,10 +1046,12 @@ label {
   /*background-image: url(./../../images/about_bg.jpg);
   background-position: center;
   background-size: cover;*/
+      background-color: #1A1A1A;
 }
 .about-top {
-  background-color: #1A1A1A;
+
   min-height: 550px;
+  padding-top: 20px;
   
 }
 .about-pic{
@@ -1044,7 +1059,7 @@ label {
   height:100%;
 }
 .about-pic img{
-  width:385px;
+  width:432px;
 }
 /*.about-top h1 {
   color: #ffffff;
@@ -1064,7 +1079,7 @@ label {
   display: flex;
  }
  .gcr-about-title-p{
-  width:82%;
+  width:61%;
  }
  .gcr-about-title-p p{
   color: #ffffff;
@@ -1108,3 +1123,144 @@ label {
     border: 2px dotted;
     color: #2d4b4e;
 }
+
+
+
+/*----------about media Query ----------*/
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  .about-pic img{
+    width: 300px;
+    border: 5px solid #fff;
+   /* border-radius: 50%;*/
+    margin-bottom: 50px;
+    height: 300px;
+}
+.about-title h1 {
+    font-size: 56px;
+    margin-left: 30px;
+}
+.gcr-about-title-p {
+    width: 80%;
+}
+}
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+  .about-pic img{
+    width: 317px;
+    border: 5px solid #fff;
+    margin-top: 24px;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+                    Footer             
+------------------------------------------------------*/
+#button-addon1 {
+  color: #ffc371;
+}
+
+.footer i {
+  color: #ffc371;
+  /*color:#ffffff;*/
+}
+
+.footer h6 {
+  color: #ffc371;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+/*----------------------------------------------------
+                    Footer End           
+------------------------------------------------------*/

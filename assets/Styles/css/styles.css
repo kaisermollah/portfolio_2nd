@@ -1002,9 +1002,9 @@ label {
 .wlc-con-right {
     padding: 30px;
     margin: 20px 10px 100px 10px;
-    background-color: rgba(15, 17, 24, 0.8);
+    background-color: rgba(15, 17, 24, 0.6);
     border-radius: 15px;
-    box-shadow: 1px 1px 20px #ffffff;
+    box-shadow: 1px 1px 20px #4c4c4c;
 }
 .wlc-con-right h2{
   color: #ffffff;

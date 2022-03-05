@@ -1,4 +1,4 @@
-/*
+
 Author       : kaiser Mollah
 Template Name: Gitanjali Code Rhythm - Bootstrap Template
 Version      : 1.0
@@ -997,6 +997,12 @@ label {
     font-weight: bold;
     letter-spacing: 3px;
 }
+/*----------welcome left contant------------*/
+.welcome_img img{
+  width: 450px;
+}
+
+
 /*----------welcome right contant------------*/
 
 .wlc-con-right {
@@ -1034,9 +1040,37 @@ label {
 
 
 
+/*----------welcome media Query ----------*/
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  .welcome_img img{
+    width: 300px;
+    margin-left: 22px;
+  }
+  .wlc-heading h1 {
+    text-align: center;
+}
+.wlc-heading h3{
+    text-align: center;
+}
+.footer{
+
+  text-align: center;
+}
+}
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+  
+    .welcome_img img{
+      width: 300px;
+  }
+}
 
 
 
+
+/*---------------------------welcome End---------------------*/
 
 
 
@@ -1263,4 +1297,4 @@ label {
 }
 /*----------------------------------------------------
                     Footer End           
-------------------------------------------------------*/
+------------------------------------------------------

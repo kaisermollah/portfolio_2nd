@@ -1226,9 +1226,9 @@ label {
 }
 .gcrservice_con_r {
     margin: 50px 0px;
-    border: 2px solid;
     padding: 30px;
     border-radius: 15px;
+    box-shadow: 1px 1px 5px #4c4c4c;
 }
 .sv_contant h4{
     padding: 15px 0px;

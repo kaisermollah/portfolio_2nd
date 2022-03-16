@@ -4,6 +4,11 @@ Template Name: Gitanjali Code Rhythm - Bootstrap Template
 Version      : 1.0
 */
 
+
+//-------------menu-----------------//
+
+
+
 (function($) {
     "use strict";
 	
@@ -25,7 +30,7 @@ function myFunction() {
   }
 }
 
-
+//-------------------scroll-------------//
 
 
 $(document).ready(function(){ 
@@ -45,7 +50,7 @@ $(document).ready(function(){
 });
 
 
-
+//-------------Gallery----------------------------//
 
 const galleryItem = document.getElementsByClassName("gallery-item");
 const lightBoxContainer = document.createElement("div");
@@ -111,6 +116,6 @@ lightBoxContainer.addEventListener("click", closeLightBox);
 
 
 
-
+//--------------------/////////-------------------------//
 
 

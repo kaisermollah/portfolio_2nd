@@ -5,12 +5,13 @@ Version      : 1.0
 */
 
 
-//-------------menu-----------------//
+//=========== menu =============//
 
 
 (function($) {
     "use strict";
      new WOW().init();
+     //========Loader=======//
     $(window).on('load', function() {
         $(".load-img").delay(200).fadeOut("slow");
         $(".preloader-overlay").delay(200).fadeOut("slow");

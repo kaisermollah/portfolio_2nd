@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="./assets/Styles/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/Styles/css/styles.css">
+    <!-- animated css -->
+    <link rel="stylesheet" href="./assets/Styles/css/animate.css">
 
 </head>
 <body>
-
+    <!-- page load  -->
+    <div class="preloader-overlay"></div>
+    <!---->
     <section class="about">
         <div class="container-fluid">
             <div class="row">
@@ -36,7 +40,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="about-pic">
+                        <div class="about-pic wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
                             <img class="mx-auto d-block" src="assets/images/about.png" alt="image">
                         </div>
                     </div>
@@ -44,7 +48,7 @@
                         <h1 class="text-uppercase">about</h1>
                         <div class="right-flex">
                             <div><h1 style="color:#ffb035;" class="text-uppercase">us</h1></div>
-                            <div class="gcr-about-title-p">
+                            <div class="gcr-about-title-p wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.5s">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                                  <p style="padding-bottom:75px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <span id="dots"> ...</span><span id="more">aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span><a href="javascript:;" onclick="myFunction()" id="myBtn">Read more</a></p> 
@@ -58,8 +62,8 @@
 
         <div class="about-content">
             <div class="container">
-                <div class="about-main-content">
-                    <div class="row text-center">
+                <div class="about-main-content wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="row text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
                         <div class="col-md-4">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <h4 class="pt-5">Research Suburbs</h4>
@@ -153,6 +157,8 @@
     <script src="./assets/scripts/bootstrap.min.js"></script>
     <!-- bootstrap bundle -->
     <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <!-- wow js -->
+    <script src="./assets/scripts/wow.js"></script>
     <!-- custom script -->
     <script src="./assets/scripts/script.js"></script>
 </body>

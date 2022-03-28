@@ -8,10 +8,14 @@ Version      : 1.0
 //-------------menu-----------------//
 
 
-
 (function($) {
     "use strict";
-	
+     new WOW().init();
+    $(window).on('load', function() {
+        $(".load-img").delay(200).fadeOut("slow");
+        $(".preloader-overlay").delay(200).fadeOut("slow");
+    })
+   
 })(jQuery);
 
 function myFunction() {
@@ -117,5 +121,9 @@ lightBoxContainer.addEventListener("click", closeLightBox);
 
 
 //--------------------/////////-------------------------//
+
+
+
+
 
 

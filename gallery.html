@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="./assets/Styles/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/Styles/css/styles.css">
+    <!-- animated css -->
+    <link rel="stylesheet" href="./assets/Styles/css/animate.css">
 
 </head>
 <body>
-
+    <!-- page load  -->
+    <div class="preloader-overlay"></div>
+    <!---->
     <section class="gallery">
         <div class="container-fluid">
             <div class="row">
@@ -38,10 +42,10 @@
                 <div class="container">
                     <div class="gallery_top_contant">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                                 <h1>Our Concept & Gallery</h1>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
                                 <p>Sit amet porttitor eget dolor morbi non arcu risus quis. Lacus sed viverra tellus in hac habitasse. Nam libero justo laoreet sit. Donec ultrices tincidunt arcu non sodales neque sodales. Felis eget nunc lobortis mattis aliquam faucibus. Sed id semper risus in hendrerit gravida rutrum quisque. Morbi tincidunt ornare massa eget.</p>
                                 <button type="button">Read More</button>
                             </div>
@@ -53,7 +57,7 @@
             </div>
 
         </div>
-        <div class="gallery-content">
+        <div class="gallery-content wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
             <div class="container">
                 <div class="gallery_main_content">
                     <div class="gallery-container">
@@ -161,6 +165,8 @@
     <script src="./assets/scripts/bootstrap.min.js"></script>
     <!-- bootstrap bundle -->
     <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <!-- wow js -->
+    <script src="./assets/scripts/wow.js"></script>
     <!-- custom script -->
     <script src="./assets/scripts/script.js"></script>
 </body>

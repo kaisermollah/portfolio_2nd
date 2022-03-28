@@ -13,11 +13,15 @@
     <link rel="stylesheet" href="./assets/Styles/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/Styles/css/styles.css">
+    <!-- animated css -->
+    <link rel="stylesheet" href="./assets/Styles/css/animate.css">
 
 </head>
 <body>
 
-   
+   <!-- page load  -->
+    <div class="preloader-overlay"></div>
+    <!---->
     <section class="contact_us">
         <div class="container-fluid">
             <div class="row">
@@ -39,7 +43,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="gcrcontactInfo_left">
+                        <div class="gcrcontactInfo_left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                             <h2>Contact Information</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                             <div>
@@ -61,23 +65,26 @@
                     </div>
                     <div class="col-md-6">
                         <div class="gcrcontactInfo_right">
-                            <div class="mapouter">
+                            <div class="mapouter wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
                                 <div class="gmap_canvas">
                                     <iframe width="707" height="473" id="gmap_canvas" src="https://maps.google.com/maps?q=tangail,%20shabalia,%20dg%20lab&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                                     </iframe>
                                     <!-- <a href="https://putlocker-is.org"></a><br><a href="https://www.embedgooglemap.net">embed google maps in web page</a> -->
                                 </div>
                             </div>
-                            <h2>Newsletter</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-                            <div class="p-1 rounded border">
-                                <div class="input-group">
-                                    <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
-                                    <div class="input-group-append">
-                                        <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                            <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                                <h2>Newsletter</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+                                <div class="p-1 rounded border">
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                                        <div class="input-group-append">
+                                            <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -108,6 +115,8 @@
     <script src="./assets/scripts/bootstrap.min.js"></script>
     <!-- bootstrap bundle -->
     <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <!-- wow js -->
+    <script src="./assets/scripts/wow.js"></script>
     <!-- custom script -->
     <script src="./assets/scripts/script.js"></script>
 </body>

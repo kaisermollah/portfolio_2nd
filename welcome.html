@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="./assets/Styles/css/all.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/Styles/css/styles.css">
+    <!-- animated css -->
+    <link rel="stylesheet" href="./assets/Styles/css/animate.css">
 
 </head>
 <body>
-
+    <!-- page load  -->
+    <div class="preloader-overlay"></div>
+    <!---->
     <section class="welcome">
         <div style="background: rgb(0, 0, 0, 0.8);">
             <div class="container-fluid">
@@ -36,7 +40,7 @@
             
                 
             <div class="wlc-heading">
-                <div class="container">
+                <div class="container wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
                     <h1>Welcome</h1>
                     <h3>Message</h3>
                 </div>
@@ -45,13 +49,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="welcome_img">
+                        <div class="welcome_img wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                             <img  src="assets/images/welcome.png" alt="image">
                         </div>
                         
                     </div>
                     <div class="col-md-6">
-                        <div class="wlc-con-right">
+                        <div class="wlc-con-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
                             <h2>Nikunja Behari Goswami</h2>
                             <p>CEO & Founder</p>
                             <div class="ceo-social">
@@ -70,7 +74,7 @@
         </div>
         
     </section>
-
+    
 
 
     <!-- scroll -->
@@ -144,6 +148,8 @@
     <script src="./assets/scripts/bootstrap.min.js"></script>
     <!-- bootstrap bundle -->
     <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <!-- wow js -->
+    <script src="./assets/scripts/wow.js"></script>
     <!-- custom script -->
     <script src="./assets/scripts/script.js"></script>
 </body>

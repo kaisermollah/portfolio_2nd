@@ -47,7 +47,7 @@ $(document).ready(function(){
         } 
     }); 
     $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 300); 
+        $("html, body").animate({ scrollTop: 0 }, 200); 
         return false; 
     }); 
 
@@ -124,7 +124,14 @@ lightBoxContainer.addEventListener("click", closeLightBox);
 //--------------------/////////-------------------------//
 
 
+//------------------- modal------------------//
 
 
-
+$( document ).ready(function() {
+  $('.trigger').click(function() {
+     $('.modal-wrapper').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur');
+     return false;
+  });
+});
 

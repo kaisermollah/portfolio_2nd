@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitanjali profile</title>
-    <!-- bootstrap css -->
+    <title>HTML Formate</title>
 
+
+    <!-- bootstrap css -->
     <link rel="stylesheet" href="./assets/Styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/Styles/css/bootstrap-icons.css">
     <!-- font-awesome css -->
@@ -18,182 +19,285 @@
 
 </head>
 <body>
-    <div class="preloader-overlay"></div>
-    <!-- <div class="load-img">
-        <img src="./assets/images/load.gif" alt="">
-    </div> -->
-    <!---- menu section ---->
-    <section class="menu wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-        <div class="main-wrapper">
-            <div class="header">
-                <input type="checkbox" id="active">
-                <label for="active" class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <div class="wrapper">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
+    <div class="preloader"></div>
+    <div class="preloading animate-bottom">
+
+        
+
+
+        <!-- this is the demo content -->
+        <div class="scroll-up-btn">
+          <i class="fas fa-angle-up"></i>
+        </div>
+        <nav class="navbar">
+          <div class="max-width">
+            <div class="logo"><a href="#">LOGO</a></div>
+            <ul class="menu">
+              <li><a href="#home" class="menu-btn">Home</a></li>
+              <li><a href="#about" class="menu-btn">About</a></li>
+              <li><a href="#services" class="menu-btn">Services</a></li>
+              <li><a href="#skills" class="menu-btn">Skills</a></li>
+              <li><a href="#teams" class="menu-btn">Teams</a></li>
+              <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+              <i class="fas fa-bars"></i>
             </div>
-        </div>
-        <div class="logo wow adeInRight" data-wow-duration="2s" data-wow-delay="1s">
-            <img src="assets/images/logo.png" alt="">
-        </div>
-    </section>
+          </div>
+        </nav>
+
+        <!-- HOME SECTION -->
+        <section class="home" id="home">
+          <div class="max-width">
+            <div class="home-content">
+              <div class="text-1">Hello, my name is</div>
+              <div class="text-2"><span>K</span>aiser <span>M</span>ollah</div>
+              <div class="text-3">And I'm a <span class="typing"></span></div>
+              <a href="https://github.com/kaisermollah" target="_blank"><i class="fab fa-github"></i> Github</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+          <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+              <div class="column left">
+                <img src="https://i.ibb.co/519RzY5/Profile-Toon.jpg" alt="" />
+              </div>
+              <div class="column right">
+                <div class="text">
+                  I am Kaiser and I'm a <span class="typing-2"></span>
+                </div>
+                <p>
+                  Graduated with a Bachelor's degree in Mechanical Engineering as I
+                  completed my final year research-based project on Computational
+                  Fluid Dynamic Analysis on Helical Coil Heat Exchanger using ANSYS
+                  Fluent software and completed 6 months industry internship at
+                  Water Resource Department. I worked at WirCab Machines as a design
+                  engineer where I got proficient with AutoCAD and SolidWorks. Now I
+                  am a Full-Stack Web Developer and exploring the world of
+                  programming.
+                </p>
+                <a href="https://drive.google.com/file/d/1nphjZ5DbAGzRQjQbm1TIZ2xN1CM1EPZV/view?usp=sharing" target="_blank">Download Resume</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICE SECTION -->
+        <section class="services" id="services">
+          <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+              <div class="card">
+                <div class="box">
+                  <i class="fas fa-code"></i>
+                  <div class="text">Web Development</div>
+                  <p>
+                    Using Front-End libraries, I build fast, interactive websites. I
+                    use Node JS and Express app in Back-End side.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fas fa-industry"></i>
+                  <div class="text">CAD Design</div>
+                  <p>
+                    I have a working knowledge of drafting mechanical drawings and
+                    creating 3D models in SolidWork
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fas fa-chart-bar"></i>
+                  <div class="text">Data Insights</div>
+                  <p>
+                    I am currently getting fimiliar with data science and machine
+                    learning technologies
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills" id="skills">
+          <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+              <div class="column left">
+                <div class="text">My skills & experiences.</div>
+                <p>
+                  I am currently learning from curriculum of FreeCodeCamp and
+                  youtube channel CodeWithHarry.
+                </p>
+                <a href="https://www.freecodecamp.org/sarfarazkhan" target="_blank">FreeCodeCamp<i class="fab fa-free-code-camp"></i></a>
+              </div>
+              <div class="column right">
+                <div class="bars">
+                  <div class="info">
+                    <span>Python, JavaScript</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="line html"></div>
+                </div>
+                <div class="bars">
+                  <div class="info">
+                    <span>Front-End Development</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="line css"></div>
+                </div>
+                <div class="bars">
+                  <div class="info">
+                    <span>Back-End Development</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="line js"></div>
+                </div>
+                <div class="bars">
+                  <div class="info">
+                    <span>Database & Testing</span>
+                    <span>60%</span>
+                  </div>
+                  <div class="line php"></div>
+                </div>
+                <div class="bars">
+                  <div class="info">
+                    <span>3D-Modeling</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="line mysql"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TEAMS SECTION -->
+        <section class="teams" id="teams">
+          <div class="max-width">
+            <h2 class="title">My teams</h2>
+            <div class="carousel owl-carousel">
+              <div class="card">
+                <div class="box">
+                  <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="" />
+                  <div class="text">Sameer</div>
+                  <p>AI/ML Engineer</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="" />
+                  <div class="text">Riddhi</div>
+                  <p>Security Analyst at TCS</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="" />
+                  <div class="text">Prabhjot</div>
+                  <p>M.S in Industrial Engineering</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="" />
+                  <div class="text">Sashant</div>
+                  <p>Assistant System Engineer at TCS</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="" />
+                  <div class="text">Hrishikesh</div>
+                  <p>Analyst at Flex</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+          <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+              <div class="column left">
+                <div class="text">Don't be shy</div>
+                <p>
+                  Feel free to get in touch with me. I am always open to discussing
+                  new projects, creative ideas or opportunities to be part of your
+                  visions.
+                </p>
+                <div class="icons">
+                  <div class="row">
+                    <i class="fas fa-user"></i>
+                    <div class="info">
+                      <div class="head">Name</div>
+                      <div class="sub-title">Sarfaraz Khan</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info">
+                      <div class="head">Address</div>
+                      <div class="sub-title">Mumbai, Maharashtra</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                      <div class="head">Email</div>
+                      <div class="sub-title">googoldkhan@gmail.com</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column right">
+                <div class="text">Message me</div>
+                <form action="#">
+                  <div class="fields">
+                    <div class="field name">
+                      <input type="text" placeholder="Name" required />
+                    </div>
+                    <div class="field email">
+                      <input type="email" placeholder="Email" required />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="Subject" required />
+                  </div>
+                  <div class="field textarea">
+                    <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                  </div>
+                  <div class="button-area">
+                    <button type="submit">Send message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+          <span>Created By
+            <a href="https://github.com/GoogolDKhan" target="_blank"><span class="fab fa-github"></span> Sarfaraz Khan</a>
+            | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        </footer>
+
+
+
+
+    </div>
     
 
-    <!-- front home Contant Start-->
-    <section class="home_contant">
-        <div class="front-home">
-            <main class="site-wrapper">
-                <div class="pt-table gcr-123">
-                    <div class="pt-tablecell page-home relative">
-                        <div class="overlay"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="page-title text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                                        <span> Welcome to Home</span>
-                                        <p class="mt20">Lorem ipsum dolor sit amet</p>
-                                    </div>
-
-                                    <div class="gcrhythm-menu clear wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-                                        <div class="gcrhythm-item">
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a  class="gcr-content" href="welcome.html">
-                                                <span class="gcr-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa-solid fa-handshake"></i>
-                                                    </span>
-                                                    <span class="title">Welcome</span>
-                                                </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
-                                        </div>
-                                        <div class="gcrhythm-item">
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a class="gcr-content" href="about.html">
-                                                <span class="gcr-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa-solid fa-bullseye"></i>
-                                                    </span>
-                                                    <span class="title">About</span>
-                                                </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
-                                        </div>
-                                        <div class="gcrhythm-item">
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a  class="gcr-content" href="service.html">
-                                                <span class="gcr-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa-brands fa-servicestack"></i>
-                                                    </span>
-                                                    <span class="title">Services</span>
-                                                </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>    
-                                        </div>
-                                        <div class="gcrhythm-item">
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a class="gcr-content" href="gallery.html">
-                                                <span class="gcr-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa-solid fa-camera-retro"></i>
-                                                    </span>
-                                                    <span class="title">Gallery</span>
-                                                </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
-                                        </div>
-                                        <div class="gcrhythm-item">
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <div class="gcr-item">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                            <a  class="gcr-content" href="contact.html">
-                                                <span class="gcr-content-inner">
-                                                    <span class="icon">
-                                                        <i class="fa-solid fa-address-card"></i>
-                                                    </span>
-                                                    <span class="title">Contact</span>
-                                                </span>
-                                                <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </section>       
-        
-     
-    <!-- Footer Option -->
-
-    <section class="footer">
-        <!-- Footer -->
-        <footer>
-        <!-- Copyrights -->
-            <div class="py-4 copy_right">
-                <div class="container text-center">
-                    <p class="text-muted mb-0 py-2">© 2022 Gitanjali Code Rhythm, All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-        
-    </section>
 
 
     

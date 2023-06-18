@@ -1,137 +1,100 @@
-/*
-Author       : Kaiser MOllah
-Template Name: Gitanjali Code Rhythm - Bootstrap Template
-Version      : 1.0
-*/
 
 
-//=========== menu =============//
+//-----preloader function------//
+
+setTimeout(function () {
+  document.querySelector(".preloader").style.display = "none";
+  document.querySelector(".preloading").style.display = "block";
+}, 1000);
+
+//------------------------------//
 
 
-(function($) {
-    "use strict";
-     new WOW().init();
-     //========Loader=======//
-    $(window).on('load', function() {
-        $(".load-img").delay(200).fadeOut("slow");
-        $(".preloader-overlay").delay(200).fadeOut("slow");
-    })
-   
-})(jQuery);
-
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-
-//-------------------scroll-------------//
 
 
-$(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 200); 
-        return false; 
-    }); 
+// demo section js //
 
-
-});
-
-
-//-------------Gallery----------------------------//
-
-const galleryItem = document.getElementsByClassName("gallery-item");
-const lightBoxContainer = document.createElement("div");
-const lightBoxContent = document.createElement("div");
-const lightBoxImg = document.createElement("img");
-const lightBoxPrev = document.createElement("div");
-const lightBoxNext = document.createElement("div");
-
-lightBoxContainer.classList.add("lightbox");
-lightBoxContent.classList.add("lightbox-content");
-lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
-lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
-
-lightBoxContainer.appendChild(lightBoxContent);
-lightBoxContent.appendChild(lightBoxImg);
-lightBoxContent.appendChild(lightBoxPrev);
-lightBoxContent.appendChild(lightBoxNext);
-
-document.body.appendChild(lightBoxContainer);
-
-let index = 1;
-
-function showLightBox(n) {
-    if (n > galleryItem.length) {
-        index = 1;
-    } else if (n < 1) {
-        index = galleryItem.length;
+$(document).ready(function () {
+  $(window).scroll(function () {
+    // sticky navbar on scroll script
+    if (this.scrollY > 50) {
+      $(".navbar").addClass("sticky");
+    } else {
+      $(".navbar").removeClass("sticky");
     }
-    let imageLocation = galleryItem[index-1].children[0].getAttribute("src");
-    lightBoxImg.setAttribute("src", imageLocation);
-}
 
-function currentImage() {
-    lightBoxContainer.style.display = "block";
-
-    let imageIndex = parseInt(this.getAttribute("data-index"));
-    showLightBox(index = imageIndex);
-}
-for (let i = 0; i < galleryItem.length; i++) {
-    galleryItem[i].addEventListener("click", currentImage);
-}
-
-function slideImage(n) {
-    showLightBox(index += n);
-}
-function prevImage() {
-    slideImage(-1);
-}
-function nextImage() {
-    slideImage(1);
-}
-lightBoxPrev.addEventListener("click", prevImage);
-lightBoxNext.addEventListener("click", nextImage);
-
-function closeLightBox() {
-    if (this === event.target) {
-        lightBoxContainer.style.display = "none";
+    // scroll-up button show/hide script
+    if (this.scrollY > 1600) {
+      $(".scroll-up-btn").addClass("show");
+    } else {
+      $(".scroll-up-btn").removeClass("show");
     }
-}
-lightBoxContainer.addEventListener("click", closeLightBox);
+  });
 
+  // slide-up script
+  $(".scroll-up-btn").click(function () {
+    $("html").animate({ scrollTop: 0 });
+    // removing smooth scroll on slide-up button click
+    $("html").css("scrollBehavior", "auto");
+  });
 
+  $(".navbar .menu li a").click(function () {
+    // applying again smooth scroll on menu items click
+    $("html").css("scrollBehavior", "smooth");
+  });
 
+  // toggle menu/navbar script
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
 
+  // typing text animation script
+  var typed = new Typed(".typing", {
+    strings: [
+      "Mechanical Engineer",
+      "Full Stack Developer",
+      "Lifelong Learner",
+      "Web Designer",
+      "Freelancer"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
 
-//--------------------/////////-------------------------//
+  var typed = new Typed(".typing-2", {
+    strings: [
+      "Mechanical Engineer",
+      "Full Stack Developer",
+      "Lifelong Learner",
+      "Web Designer",
+      "Freelancer"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  });
 
-
-//------------------- modal------------------//
-
-
-$( document ).ready(function() {
-  $('.trigger').click(function() {
-     $('.modal-wrapper').toggleClass('open');
-    $('.page-wrapper').toggleClass('blur');
-     return false;
+  // owl carousel script
+  $(".carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      600: {
+        items: 2,
+        nav: false
+      },
+      1000: {
+        items: 3,
+        nav: false
+      }
+    }
   });
 });
-

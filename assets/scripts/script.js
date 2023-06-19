@@ -52,9 +52,7 @@ $(document).ready(function () {
   // typing text animation script
   var typed = new Typed(".typing", {
     strings: [
-      "Mechanical Engineer",
-      "Full Stack Developer",
-      "Lifelong Learner",
+      "Graphic Designer",
       "Web Designer",
       "Freelancer"
     ],
@@ -65,9 +63,7 @@ $(document).ready(function () {
 
   var typed = new Typed(".typing-2", {
     strings: [
-      "Mechanical Engineer",
-      "Full Stack Developer",
-      "Lifelong Learner",
+      "Graphic Designer",
       "Web Designer",
       "Freelancer"
     ],

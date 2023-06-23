@@ -94,3 +94,25 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+
+(function() {
+  var slider = document.querySelector('.slider');
+  var slides = slider.querySelector('.slides');
+  var slideWidth = slides.clientWidth;
+  var slideIndex = 0;
+  var slideCount = slides.childElementCount;
+  var interval = 2000; // Interval between slide transitions in milliseconds
+
+  function slide() {
+    slideIndex++;
+    if (slideIndex >= slideCount) {
+      slideIndex = 0;
+    }
+    slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+  }
+
+  setInterval(slide, interval);
+})();
